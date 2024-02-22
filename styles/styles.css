@@ -1,0 +1,25 @@
+:root{
+    --red:#E3311D;
+    --black:#050507;
+    --grey:#AAACA1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #AAACA1;
+    height: 100px;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: color,0.2s;
+}
+
+a:hover{
+    color: #E3311D;
+}
