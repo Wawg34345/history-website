@@ -4,10 +4,19 @@
     --grey:#AAACA1;
 }
 
+@font-face {
+    font-family: "noto suns bold";
+    src: url("../styles/fonts/NotoSans-Bold.ttf");
+}
+@font-face {
+    font-family:"noto suns regular" ;
+    src: url("../styles/fonts/NotoSans-Regular.ttf");
+}
+
 nav{
     display: flex;
     justify-content: space-around;
-    background-color: #AAACA1;
+    background-color:var(--black);
     height: 100px;
     align-items: center;
 }
@@ -18,8 +27,32 @@ a{
     text-transform: uppercase;
     color: #ffffff;
     transition: color,0.2s;
+    font-family:  "noto suns bold";
 }
 
 a:hover{
     color: #E3311D;
+}
+
+.images{
+    width: 1000px;
+
+}
+
+h1{
+    text-align: center;
+    font-family:  "noto suns bold";
+}
+
+p{
+    font-size: 36px;
+    width: 80%;
+    text-indent: 25px;
+    font-family:"noto suns regular"  ;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
