@@ -1,7 +1,6 @@
 :root{
     --red:#E3311D;
     --black:#050507;
-    --grey:#AAACA1;
 }
 
 @font-face {
@@ -31,11 +30,11 @@ a{
 }
 
 a:hover{
-    color: #E3311D;
+    color: var(--red);
 }
 
 .images{
-    width: 1000px;
+    width: 80%;
 
 }
 
@@ -45,10 +44,11 @@ h1{
 }
 
 p{
-    font-size: 36px;
+    font-size: 24px;
     width: 80%;
     text-indent: 25px;
     font-family:"noto suns regular"  ;
+    margin:5px;
 }
 .main{
     display: flex;
@@ -56,3 +56,23 @@ p{
     justify-content: space-around;
     align-items: center;
 }
+
+*::selection{
+    background-color:var(--red);
+    color:white;
+}
+
+*::-webkit-scrollbar{
+    background-color:transparent;
+ }
+
+ *::-webkit-scrollbar-thumb{
+     border-radius: 10px;
+     background-color: grey;
+     border: 5px solid transparent;
+     background-clip: content-box;
+ }
+
+ *::-webkit-scrollbar-thumb:hover{
+    border: 3px solid transparent;
+ }
